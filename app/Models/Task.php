@@ -17,7 +17,8 @@ class Task extends Model
     protected $fillable = [
         'name',
         'description',
-        'status'
+        'status',
+        'user_id'
     ];
 
     /**
@@ -30,7 +31,7 @@ class Task extends Model
         'updated_at',
         'deleted_at'
     ];
-    
+
     /**
      * tasks that belongs to the user
      *
